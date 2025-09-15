@@ -2,7 +2,10 @@
 ## 個人網頁
 
 ```
-interest:
+color:
+-  red
+-  green
+-  blue
 ```
 
 ![nkust](nkust.png "高科大")
