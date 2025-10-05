@@ -1,27 +1,33 @@
 ## 1.甘特圖
 
-專案時程（2025/10/01 至 2025/12/21，約 12 週）。
+
 
 ```mermaid
 gantt
     title 項目計劃
     dateFormat  YYYY-MM-DD
-    section 啟動與分析
-    研擬計畫         :2025-10-01, 5d
-    需求分析         :2025-10-06, 7d
-    section 開發階段
-    設計階段         :2025-10-13, 15d
-    影像辨識         :2025-10-13, 15d
-    section 實作階段
-    實作階段         :2025-10-28, 15d
-    API整合         :2025-11-13, 14d
-    section 測試階段
-    系統測試           :2025-11-27, 20d
-    使用者測試         :2025-12-17, 4d
+    section 任務
+    研擬計畫         :1a,2025-10-01, 1d
+    任務分配         :2a,after 1a, 4d
+    取得硬體         :3a,after 1a, 17d
+    程式開發         :4a,after 2a, 70d
+    安裝硬體         :5a,after 3a, 10d
+    程式測試         :6a,after 4a, 30d
+    撰寫使用手冊      :7a,after 5a, 25d
+    轉換檔案         :8a,after 5a, 20d
+    系統測試         :9a,after 6a, 25d
+    使用者訓練       :10a,after 7a 8a, 20d
+    使用者測試       :11a,after 9a 10a, 25d
+
+
+
 ```
 
 
-## 3.PERT/CPM圖
+
+
+
+## 2.PERT/CPM圖、關鍵路徑
 
 ```mermaid
 graph LR
